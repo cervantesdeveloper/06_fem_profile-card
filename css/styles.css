@@ -1,0 +1,141 @@
+:root{
+    --cyanDark: rgb(25, 162, 174);
+    --blue:rgb(45, 50, 72);
+    --gray: rgb(106, 111, 129);
+    --grayDark: rgb(150, 150, 150);
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cyanDark); 
+    background-image: 
+        url("../images/bg-pattern-top.svg"),
+        url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100vw, 100vw;
+    background-position: -50vw -50vw, 50vw 50vh;
+}
+
+.profile-card{
+    width: clamp(20.4375rem, 100%, 21.875rem);
+    height: 23.4375rem;
+    border-radius: .625rem;
+    background-color: #fff;
+}
+
+.profile-card__info{
+    position: relative;
+    height: 17.875rem;
+    border-bottom: 1px solid var(--grayDark);
+}
+
+.profile-card__hero{
+    height: 50%;
+    background-image: url("../images/bg-pattern-card.svg");
+    border-radius: .5rem .5rem 0 0;
+}
+
+.profile-card__picture{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 6.625rem;
+    width: 6.625rem;
+    border-radius: 50%;
+    border: .25rem solid #fff;
+}
+
+.profile-card__picture img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-card__name{
+    height: 50%;
+    padding:4.125rem 0 1.25rem;
+}
+
+h1{
+    font-size: .875rem;
+    line-height: 1.875rem;
+    color: var(--blue);
+    text-align: center;
+    font-weight: 700;
+}
+
+h1 span{
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.profile-card__name p{
+    text-align: center;
+    color: var(--gray);
+    line-height: 1.6875rem;
+    font-size: .6875rem;
+}
+
+.profile-card__stats {
+    padding:1.5rem  2.75rem;
+    display: flex;
+}
+
+
+.profile__card-stat{
+    flex-basis: 33.3333%;
+    text-align: center;
+}
+
+.profile__card-stat p{
+    color: var(--blue);
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.5rem;
+}
+
+.profile__card-stat p span{
+    color: var(--gray);
+    font-weight: 400;
+    font-size: .6875rem;
+    line-height: 1.125rem;
+}
+
+footer{
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 1rem;
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: #fff; 
+}
+
+
+@media (min-width: 412px) {
+   
+    
+}

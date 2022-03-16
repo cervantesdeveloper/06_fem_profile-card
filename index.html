@@ -5,31 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <main>
+    <div class="profile-card">
+      <div class="profile-card__info">
+        <div class="profile-card__hero">
+        </div>
+        <div class="profile-card__picture">
+          <img src="images/image-victor.jpg" alt="a photo of the user">
+        </div>
+        <div class="profile-card__name">
+          <h1>Victor Crest <span>26</span></h1>
+          <p>London</p>
+        </div>
+      </div>
+      <div class="profile-card__stats">
+        <div class="profile__card-stat">
+          <p>80K</p>
+          <p><span>Followers</span></p>
+        </div>
+        <div class="profile__card-stat">
+          <p>803K</p>
+          <p><span>Likes</span></p>
+        </div>
+        <div class="profile__card-stat">
+          <p>1.4K</p>
+          <p><span>Photos</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/cervantesdeveloper">Cervantes Developer</a>.
+  </footer>
 </body>
 </html>
